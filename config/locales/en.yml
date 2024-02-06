@@ -86,3 +86,7 @@ en:
       zip_presence: "zip should be present"
       city_presenece: "city should be present"
       country: "country should be present"
+    base_issue_type:
+      name_presence: "name should be present"
+    issue_type:
+      parent_not_same: "must have the same parent as location type"

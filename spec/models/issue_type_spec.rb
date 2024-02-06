@@ -44,4 +44,15 @@ RSpec.describe IssueType, type: :model do
       end.to raise_error(ActiveRecord::RecordInvalid)
     end
   end
+  describe "#base_issue_type" do
+    let(:other_base_location_type) {create(:base_location_type)}
+    let(:other_base_issue_type) {create(:base_issue_type, base_location_type: other_base_location_type)}
+    it "has the same base_location_type as location_type" do
+      expect do
+        issue_type.base_issue_type = other_base_issue_type
+        issue_type.save!
+      end.to raise_error(ActiveRecord::RecordInvalid)
+    end
+  end
+
 end

@@ -19,8 +19,8 @@ module IssueTypeValidatable
 
 
   def location_type_and_base_issue_type_should_have_the_same_parent_base_location_type
-    if base_issue_type&.base_location_type != location_type&.base_location_type
-      errors.add(:base_issue_type, "doit avoir le meme parent que location type")
+    unless base_issue_type&.base_location_type == location_type&.base_location_type
+      errors.add(:base_issue_type, I18n.t("validations.issue_type.parent_not_same"))
     end
   end
 end

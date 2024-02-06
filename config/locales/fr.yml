@@ -55,3 +55,7 @@ en:
       zip_presence: "zip doit être défini"
       city_presenece: "city doit être défini"
       country: "country doit être défini"
+    base_issue_type:
+      name_presence: "name doit être défini"
+    issue_type:
+      parent_not_same: "doit avoir le même parent que location type"
