@@ -43,6 +43,7 @@ en:
     visit_schedule:
       invalide_due_at: "doit être fixé avec une date d'échéance sur le futur"
       incompatible_place_and_checklist: "doit être défini avec la place et le checklist de la même company"
+      only_one_of_them: "seul l'un d'entre spot, place et residence qui peut être ici"
     visit_report:
       checkpoints_not_complete: "doivent tous avoir été répondus"
       invalid_checkpoint_status: "doivent être ok, ko ou non-concerné"
