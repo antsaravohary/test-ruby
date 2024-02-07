@@ -74,6 +74,7 @@ en:
     visit_schedule:
       invalide_due_at: "must be set with a due date on future"
       incompatible_place_and_checklist: "must be set with place and checklist from same company"
+      only_one_of_them: "only one the spot or residence or place can be here"
     visit_report:
       checkpoints_not_complete: "should all be checked"
       invalid_checkpoint_status: "should be either ok, ko or missing"
